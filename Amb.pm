@@ -1,4 +1,4 @@
-# $Id: Amb.pm,v 1.6 2008/07/07 11:22:44 dk Exp $
+# $Id: Amb.pm,v 1.7 2008/09/03 12:56:14 dk Exp $
 package Amb;
 use strict;
 
@@ -6,13 +6,13 @@ require Exporter;
 require DynaLoader;
 use vars qw(@ISA @EXPORT @EXPORT_OK $VERSION);
 @ISA = qw(Exporter DynaLoader);
-$VERSION = '0.01';
+$VERSION = '0.02';
 @EXPORT = qw(amb);
 @EXPORT_OK = qw(angelic demonic);
 
 bootstrap Amb $VERSION;
 
-use B::Generate 1.12_10; 
+use B::Generate 1.13; 
 use Carp qw(confess croak);
 use PadWalker;
 
